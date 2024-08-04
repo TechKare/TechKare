@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="img/logoimg1.png" rel="icon">
+  <link href="img/logoimg1.png" rel="apple-touch-icon">
+    <title>Simple Google Map</title>
+    <style>
+        /* Set the size of the map container */
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h3>My Google Map</h3>
+    <!-- The map container -->
+    <div id="map"></div>
+
+    <!-- Load the Google Maps API with your API key -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiTwHJCojVI7W_p528fDfFv0voNIHVPMc&callback=initMap">
+    </script>
+
+    <!-- Initialize the map -->
+    <script>
+        function initMap() {
+            // The location you want to center the map on
+            var location = {lat: -34.397, lng: 150.644};
+            
+            // Create a map object and specify the DOM element for display.
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: location,
+                zoom: 8
+            });
+            
+            // Optional: Add a marker to the map
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+
+        // Error handling in case Google Maps API fails to load
+        function handleMapError() {
+            alert("Sorry, Google Maps could not be loaded.");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechKare - Login and Register Forms</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="img/logoimg1.png" rel="icon">
+  <link href="img/logoimg1.png" rel="apple-touch-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container" id="login-form">
+            <h2>Login</h2>
+            <form id="login-form-element">
+                <label for="login-username">Username:</label>
+                <div class="input-container">
+                    <input type="text" id="login-username" name="username" required>
+                    <i class="fas fa-user"></i>
+                </div>
+                <label for="login-password">Password:</label>
+                <div class="input-container">
+                    <input type="password" id="login-password" name="password" required>
+                    <i class="fas fa-eye-slash" id="toggle-login-password" style="cursor: pointer;"></i>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <p><a href="#" id="show-forgot">Forgot Password?</a></p>
+            <p>Don't have an account? <a href="#" id="show-register">Register</a></p>
+        </div>
+        
+        <div class="form-container" id="register-form" style="display: none;">
+            <h2>Register</h2>
+            <form id="register-form-element">
+                <label for="register-username">Username:</label>
+                <div class="input-container">
+                    <input type="text" id="register-username" name="username" required>
+                    <i class="fas fa-user"></i>
+                </div>
+                <label for="register-email">Email:</label>
+                <div class="input-container">
+                    <input type="email" id="register-email" name="email" required>
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <label for="register-password">Password:</label>
+                <div class="input-container">
+                    <input type="password" id="register-password" name="password" required>
+                    <i class="fas fa-eye-slash" id="toggle-register-password" style="cursor: pointer;"></i>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+            <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+        </div>
+        
+        <div class="form-container" id="forgot-form" style="display: none;">
+            <h2>Reset Password</h2>
+            <form>
+                <label for="forgot-email">Email:</label>
+                <div class="input-container">
+                    <input type="email" id="forgot-email" name="email" required>
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <button type="submit">Reset Password</button>
+            </form>
+            <p><a href="#" id="back-to-login">Back to Login</a></p>
+        </div>
+    </div>
+
+    <script>
+      
+        function togglePasswordVisibility(passwordFieldId, toggleIconId) {
+            const passwordField = document.getElementById(passwordFieldId);
+            const passwordIcon = document.getElementById(toggleIconId);
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+                passwordIcon.classList.remove('fa-eye-slash');
+                passwordIcon.classList.add('fa-eye');
+            } else {
+                passwordField.type = 'password';
+                passwordIcon.classList.remove('fa-eye');
+                passwordIcon.classList.add('fa-eye-slash');
+            }
+        }
+
+        document.getElementById('toggle-login-password').addEventListener('click', function() {
+            togglePasswordVisibility('login-password', 'toggle-login-password');
+        });
+
+        document.getElementById('toggle-register-password').addEventListener('click', function() {
+            togglePasswordVisibility('register-password', 'toggle-register-password');
+        });
+
+       
+        document.getElementById('show-register').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('login-form').style.display = 'none';
+            document.getElementById('register-form').style.display = 'block';
+            document.getElementById('forgot-form').style.display = 'none';
+        });
+
+        document.getElementById('show-login').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('register-form').style.display = 'none';
+            document.getElementById('login-form').style.display = 'block';
+            document.getElementById('forgot-form').style.display = 'none';
+        });
+
+        document.getElementById('show-forgot').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('login-form').style.display = 'none';
+            document.getElementById('register-form').style.display = 'none';
+            document.getElementById('forgot-form').style.display = 'block';
+        });
+
+        document.getElementById('back-to-login').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('login-form').style.display = 'block';
+            document.getElementById('register-form').style.display = 'none';
+            document.getElementById('forgot-form').style.display = 'none';
+        });
+
+        // popup message for registration
+        document.getElementById('register-form-element').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('You are successfully registered!');
+            document.getElementById('register-form').style.display = 'none';
+            document.getElementById('login-form').style.display = 'block';
+        });
+
+        // popup message for login
+        document.getElementById('login-form-element').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('You have successfully logged in!');
+        });
+    </script>
+</body>
+</html>
