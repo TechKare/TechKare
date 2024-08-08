@@ -86,3 +86,6 @@ a:hover {
     text-decoration: underline;
     color: #012b5d; 
 }
+html{
+    scroll-behavior: smooth;
+}
