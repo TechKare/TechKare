@@ -337,3 +337,6 @@ h3{
 .red-btn:hover{
     color: #fff;
 }
+html{
+    scroll-behavior: smooth;
+}
