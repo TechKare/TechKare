@@ -15,8 +15,8 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-html{
-  scroll-behavior:auto;
+*{
+  scroll-behavior:smooth;
 }
 
 a {
