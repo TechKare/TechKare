@@ -90,7 +90,7 @@
     background-color: transparent;
 }
 
-@media screen and (max-width:486px){
+@media screen and (max-width:376px){
     .priceContainer{
         display: block;
     }

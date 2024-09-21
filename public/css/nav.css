@@ -164,7 +164,7 @@ nav div button:hover {
     display: none;
 }
 
-@media screen and (max-width: 486px) {
+@media screen and (max-width: 376px) {
     nav img {
         width: 150px;
     }
