@@ -643,7 +643,7 @@ textarea {
     border: #007bff 2px solid;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 480px) {
     .secMain img {
         display: none;
     }

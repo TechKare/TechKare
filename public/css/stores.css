@@ -74,7 +74,7 @@ html, body {
     background-color: #2a2dc6;
 }
 
-@media screen and (max-width:376px) {
+@media screen and (max-width:480px) {
     .containersss {
         display: block;
         width: 100%;

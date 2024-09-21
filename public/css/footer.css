@@ -71,7 +71,7 @@
     color: white;
 }
 
-@media screen and (max-width: 376px){
+@media screen and (max-width: 480px){
     .firstFoot{
         display:block;
         padding: 0%;
