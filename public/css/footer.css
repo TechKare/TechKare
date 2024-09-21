@@ -1,0 +1,90 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: "Poppins", sans-serif;
+}
+
+.firstFoot{
+    background-color: rgba(0,74,153,255);
+    color: white;
+    display: flex;
+    padding: 100px;
+}
+
+.firstFoot ul li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.firstFoot .infoSec img{
+    width: 250px;
+}
+
+.firstFoot div{
+    width: 40%;
+    padding: 0 30px 0 30px;
+}
+
+.firstFoot div p{
+    font-size: 15px;
+}
+
+.firstFoot div h3{
+    margin-bottom: 10px;
+}
+
+.firstFoot .linkSec{
+    width: 25%;
+}
+
+.firstFoot .contactSec{
+    width: 25%;
+}
+
+.firstFoot .newsSec input{
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    padding: 5px;
+    outline: none;
+}
+
+.firstFoot .newsSec button{
+    padding: 5px 10px 5px 10px;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    background-color: rgba(0,123,255,255);
+    color: white;
+}
+
+.secFoot{
+    background-color: rgba(0,66,138,255);
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.secFoot p{
+    font-size: small;
+}
+
+.secFoot a{
+    color: white;
+}
+
+@media screen and (max-width: 360px){
+    .firstFoot{
+        display:block;
+        padding: 0%;
+        padding: 0px 15px 15px 15px;
+    }
+    .firstFoot div{
+        width: 100%;
+        padding: 0px 0px 15px 0px;
+    }
+    .firstFoot div p{
+        font-size: 13px;
+    }
+    .firstFoot .infoSec img{
+        width: 200px;
+    }
+}
