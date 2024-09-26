@@ -1,0 +1,138 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+.aboutSec {
+    padding: 100px 0px 100px 0px;
+}
+
+.about-header {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+.about-header h1 {
+    margin-bottom: 20px;
+}
+
+.about-header p {
+    width: 80%;
+    margin: auto;
+}
+
+.row-about {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px 0px 100px 0px;
+}
+
+.row1-about {
+    width: 30%;
+}
+
+.row-about .aboutImg {
+    width: 540px;
+}
+
+.icon-box {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.icon-box .icon {
+    margin: 20px;
+    cursor: pointer;
+}
+
+.icon-box:hover .icon span {
+    background-color: #007bff;
+    color: white;
+}
+
+.icon-box .icon span {
+    color: #007bff;
+    font-size: 30px;
+    border: #007bff 2px solid;
+    border-radius: 50%;
+    padding: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.icon-box h4 a {
+    text-decoration: none;
+    color: black;
+}
+
+.row-about-extra {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px 0px 100px 0px;
+}
+
+.row-about-extra .extraAboutImg {
+    width: 540px;
+}
+
+.row1-about-extra {
+    width: 30%;
+}
+
+.row1-about-extra p {
+    text-align: justify;
+}
+
+@media  screen and (max-width: 480px) {
+    .aboutSec {
+        margin: 0px 36px 0px 36px;
+        padding: 50px 0px;
+    }
+
+    .aboutSec img {
+        display: none;
+    }
+
+    .about-header {
+        margin: 0%;
+        width: 100%;
+    }
+
+    .about-header p {
+        text-align: justify;
+        margin: 0%;
+        width: 288px;
+        margin-bottom: 36px;
+    }
+
+    .row-about {
+        display: block;
+        padding: 50px 0px;
+    }
+
+    .row-about .row1-about {
+        width: 100%;
+    }
+
+    .row-about .row1-about p {
+        text-align: justify;
+    }
+
+    .row-about-extra {
+        padding: 50px 0px 0px 0px;
+    }
+
+    .row1-about-extra {
+        width: 100%;
+    }
+}

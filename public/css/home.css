@@ -667,48 +667,6 @@ textarea {
         width: 90%;
     }
 
-    .aboutSec {
-        margin: 0px 36px 0px 36px;
-        padding: 50px 0px;
-    }
-
-    .aboutSec img {
-        display: none;
-    }
-
-    .about-header {
-        margin: 0%;
-        width: 100%;
-    }
-
-    .about-header p {
-        text-align: justify;
-        margin: 0%;
-        width: 288px;
-        margin-bottom: 36px;
-    }
-
-    .row-about {
-        display: block;
-        padding: 50px 0px;
-    }
-
-    .row-about .row1-about {
-        width: 100%;
-    }
-
-    .row-about .row1-about p {
-        text-align: justify;
-    }
-
-    .row-about-extra {
-        padding: 50px 0px 0px 0px;
-    }
-
-    .row1-about-extra {
-        width: 100%;
-    }
-
     .serviceSec {
         padding: 0%;
         background-color: rgb(236, 245, 255);

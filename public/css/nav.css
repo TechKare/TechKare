@@ -58,10 +58,18 @@ nav div button {
     transition: all .3s ease-in-out;
 }
 
+nav div button a {
+    color: white;
+    text-decoration: none;
+}
+
 nav div button:hover {
     background-color: transparent;
-    color: #007bff;
     border: #007bff 2px solid;
+}
+
+nav div button:hover a {
+    color: #007bff;
 }
 
 #nav-item {
@@ -178,8 +186,8 @@ nav div button:hover {
         display: none;
     }
 
-    nav {
-        justify-content: left;
+    nav{
+        justify-content: space-between;
     }
 
     .button-container {
@@ -187,8 +195,23 @@ nav div button:hover {
     }
 
     #cartIcon {
-        display: block;
-        margin-left: auto;
+        display: flex;
+        justify-content: end;
+        float: left;
+    }
+
+    #cartIcon span {
         color: rgba(48, 75, 184, 255);
+    }
+
+    #cartIcon button {
+        margin: 0px 10px 0px 10px;
+        padding: 5px 5px;
+        border-radius: 10px;
+    }
+
+    #cartIcon button a span {
+        color: white;
+        margin: 2px 2px 2px 0;
     }
 }

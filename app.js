@@ -27,6 +27,15 @@ app.get('/services',(req,res)=>{
 app.get('/pricing',(req,res)=>{
     res.render("pricing")
 })
+app.get('/about',(req,res)=>{
+    res.render('about')
+})
+app.get('/feedback',(req,res)=>{
+    res.render('/feedback')
+})
+app.get('/login-signup',(req,res)=>{
+    res.render('login-sigup')
+})
 
 app.listen(port, ()=>{
     console.log(`listening to port: http://localhost:${port}`)
