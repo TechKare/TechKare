@@ -5,7 +5,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-*::-webkit-scrollbar {
+body::-webkit-scrollbar {
     display: none;
 }
 
@@ -137,7 +137,7 @@ html, body {
 
 .containersss {
     display: flex;
-    overflow: scroll;
+    /* overflow: scroll; */
     justify-content: space-evenly;
     margin: 10px;
 }
@@ -661,6 +661,10 @@ textarea {
         display: block;
         width: 100%;
         margin-left: -1px;
+    }
+
+    .container-accessories {
+        overflow: scroll;
     }
     
     .store {
