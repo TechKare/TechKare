@@ -5,11 +5,13 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
 body::-webkit-scrollbar {
     display: none;
 }
 
-html, body {
+html,
+body {
     overflow-x: hidden;
 }
 
@@ -119,7 +121,6 @@ html, body {
 
 .container-accessories {
     display: flex;
-    overflow: scroll;
     justify-content: space-evenly;
 }
 
@@ -666,7 +667,7 @@ textarea {
     .container-accessories {
         overflow: scroll;
     }
-    
+
     .store {
         width: 90%;
     }
@@ -719,79 +720,100 @@ textarea {
     .box p {
         font-size: 14px;
     }
-    .benefit{
+
+    .benefit {
         width: 100%;
         padding: 15px 0px 15px 0px;
     }
-    .benefit-header{
+
+    .benefit-header {
         width: 100%;
         margin: 0%;
         padding-top: 10px;
     }
-    .benefit-header h1{
+
+    .benefit-header h1 {
         font-size: 25px;
     }
-    .benefit-header p{
+
+    .benefit-header p {
         margin-bottom: 30px;
     }
-    .benefitContain{
+
+    .benefitContain {
         display: block;
     }
-    .benefitBox{
+
+    .benefitBox {
         width: 260px;
     }
+
     #team {
         width: 100%;
         padding: 0%;
     }
-    #team .secHeader{
+
+    #team .secHeader {
         width: 100%;
     }
-    #team .secHeader h1{
+
+    #team .secHeader h1 {
         margin: 15px 0px 15px 0px;
     }
-    #team .secHeader p{
+
+    #team .secHeader p {
         font-size: 13px;
     }
+
     #team .row {
         display: block;
         text-align: center;
     }
-    #team .member{
+
+    #team .member {
         margin-bottom: 50px;
     }
-    #team .member img{
+
+    #team .member img {
         width: 190px;
     }
-    .client-container{
+
+    .client-container {
         width: 100%;
         padding: 0%;
         margin: 0%;
     }
-    .client-header{
+
+    .client-header {
         width: 100%;
         margin: 0%;
         margin-bottom: 20px;
     }
-    .client-header h1{
+
+    .client-header h1 {
         margin-top: 20px;
     }
+
     .client-header p {
         width: 90%;
         font-size: 13px;
     }
-    .clientInfo{
+
+    .clientInfo {
         display: block;
         text-align: center;
     }
-    .clientInfo .client-logo{
-        padding: 20px 10px 20px 10px ;
+
+    .clientInfo .client-logo {
+        padding: 20px 10px 20px 10px;
     }
-    #contact{
+
+    #contact {
         margin: 0px 0px 0px -10px;
         width: 100%;
     }
-    #contact .row{
+
+    #contact .row {
         display: none;
     }
 }
