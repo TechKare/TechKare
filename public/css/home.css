@@ -645,8 +645,14 @@ textarea {
 }
 
 @media screen and (max-width: 480px) {
+    .secMain{
+        flex-direction: column-reverse;
+        padding: 60px 0 60px 0;
+    }
+
     .secMain img {
-        display: none;
+        width: 250px;
+        margin-bottom: 40px;
     }
 
     .firstMain {
@@ -656,6 +662,13 @@ textarea {
 
     .firstMain h1 {
         font-size: 40px;
+        text-align: center;
+        margin-right: 20px;
+    }
+
+    .subMainFirst{
+        flex-direction: column;
+        margin: auto;
     }
 
     .containersss {
