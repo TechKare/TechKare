@@ -112,6 +112,7 @@ nav div button:hover a {
     position:fixed;
     z-index: 10;
     bottom: -5%;
+    overflow: hidden;
 }
 
 .button {
