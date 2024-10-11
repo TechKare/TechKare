@@ -109,9 +109,9 @@ nav div button:hover a {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
         rgba(27, 133, 219, 0.5) 5px 10px 15px;
     top: 92%;
-    position: fixed;
+    position:fixed;
     z-index: 10;
-    bottom: 0;
+    bottom: 0%;
 }
 
 .button {

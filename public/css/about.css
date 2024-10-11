@@ -99,8 +99,17 @@ html, body {
         padding: 50px 0px;
     }
 
-    .aboutSec img {
-        display: none;
+    .row-about-extra .extraAboutImg {
+        width: 100%;
+    }
+
+    #row-extra{
+        flex-direction: column;
+        padding: 100px 0px 100px 0px;
+    }
+
+    .row-about .aboutImg {
+        width: 100%;
     }
 
     .about-header {
@@ -116,7 +125,7 @@ html, body {
     }
 
     .row-about {
-        display: block;
+        flex-direction: column-reverse;
         padding: 50px 0px;
     }
 
@@ -129,6 +138,7 @@ html, body {
     }
 
     .row-about-extra {
+        flex-direction: column-reverse;
         padding: 50px 0px 0px 0px;
     }
 
